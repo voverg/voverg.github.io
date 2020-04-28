@@ -10,7 +10,15 @@
 }
 
 h2, .h2 {
+    font-family: 'Neucha', cursive;
+    font-size: 2rem;
+    font-weight: 300;
     color: #45b29a;
+    text-align: center;
+}
+
+p {
+    color: #555;
 }
 
 .container {
@@ -130,6 +138,12 @@ h2, .h2 {
     font-size: 1.2rem;
     font-weight: 500;
 }
+.header-img {
+    height: 300px;
+    margin-top: 50px;
+    background: url('../img/prog_beard.png') no-repeat center;
+    background-size: contain;
+}
 
 
 /* -------------------- Content ----------------- */
@@ -137,15 +151,72 @@ h2, .h2 {
     width: 100%;
 }
 .section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 10px;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: #000;
+    min-height: 90vh;
+    padding: 50px 10px 10px 10px;
+    color: #555;
     border: 1px solid #000;
+}
+
+/*------------ About --------------------*/
+.about__title img {
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.about__title p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.about__skills {
+    padding: 50px 0 30px;
+}
+/*progress bars*/
+.progress-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.skill {
+    position: relative;
+}
+svg {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}
+svg circle {
+    width: 80%;
+    height: 80%;
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+svg circle:nth-child(2) {
+    stroke-dasharray: 251;
+    stroke-dashoffset: 251; 
+    /*stroke-dashoffset: calc(251 - (251 * 90) / 100);*/
+    stroke: #f19c44;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+.skill__persents {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%);
+}
+.skill__text {
+    text-align: center;
+    color: #45b29a;
+    font-weight: 600;
+}
+.fa {
+    color: #45b29a;
 }
 
 /* -------------------- css burger menu ------------------------ */
@@ -167,7 +238,8 @@ h2, .h2 {
     position: absolute;
     width: 50px;
     height: 6px;
-    background-color: #45b29a;
+    /*background-color: #45b29a;*/
+    background-color: #99d2c5;
     transition: 0.3s;
 }
 
@@ -200,6 +272,16 @@ h2, .h2 {
 .burger-menu_active .burger-menu__lines::after {
     top: 0;
     transform: rotate(-45deg);
+}
+/*title*/
+.burger-menu__title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: #45b29a;
+    opacity: 0.7;
 }
 /*menu*/
 .burger-menu__nav {
@@ -265,6 +347,7 @@ h2, .h2 {
 
 /* ------------------------ Footer ---------------------- */
 .footer {
+    background-color: #2e373c;
 }
 .footer p {
     text-align: center;
@@ -298,6 +381,9 @@ h2, .h2 {
 
     .main-nav {
         display: none;
+    }
+    .header h1 {
+        padding-top: 120px;
     }
 
     .burger-menu__button {

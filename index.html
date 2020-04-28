@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Some description">
-    <meta name="keywords" content="Some keywords">
+    <meta name="description" content="Это мой сайт-портфолио, написанный на Html, Css и чистом JavaScript">
+    <meta name="keywords" content="портфолио">
     <!-- <meta name="og:image" content="img/social.jpg"> -->
     <title>Voverg</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
@@ -20,6 +20,7 @@
     <div class="burger-menu">
         <a href="#" class="burger-menu__button bg-color">
             <span class="burger-menu__lines"></span>
+            <span class="burger-menu__title">Navigation</span>
         </a>
 
         <nav class="burger-menu__nav bg-color">
@@ -53,24 +54,105 @@
                 </nav>
                 <h1>I'm Voverg</h1>
                 <p>веб разработчик</p>
+                <div class="header-img">
+                    <!-- <img src="img/prog_beard.png" alt="proger"> -->
+                </div>
             </header>
         </div>
 
         <div class="content">
-            <section id="section-1" class="section container">Section 1</section>
+            <section id="section-1" class="section container about">
+                <div class="about__title">
+                    <img src="img/vovka_draw_cut-photo.jpg" alt="">
+                    <h2>Привет</h2>
+                    <p>Меня зовут Владимир. Я веб-разработчик родом из России, г. Чебоксары.
+                        Я увлекаюсь веб-разработкой, люблю изучать прогаммирование и экспериментировать.</p>
+                </div>
+                <div class="about__skills">
+                    <h2>Что я умею</h2>
+                    <div class="progress-skills">
+                        <div class="skill">
+                            <svg>
+                                <circle cx="50" cy="50" r="40"></circle>
+                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="90"></circle>
+                            </svg>
+                            <div class="skill__persents"><span></span>%</div>
+                            <div class="skill__text">
+                                <i class="fa fa-html5"></i>&nbsp;&nbsp;Html
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <svg>
+                                <circle cx="50" cy="50" r="40"></circle>
+                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="90"></circle>
+                            </svg>
+                            <div class="skill__persents"><span></span>%</div>
+                            <div class="skill__text">
+                                <i class="fa fa-css3"></i>&nbsp;&nbsp;Css
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <svg>
+                                <circle cx="50" cy="50" r="40"></circle>
+                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="80"></circle>
+                            </svg>
+                            <div class="skill__persents"><span></span>%</div>
+                            <div class="skill__text">
+                                <i class="fa fa-code"></i>&nbsp;&nbsp;JavaScript
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <svg>
+                                <circle cx="50" cy="50" r="40"></circle>
+                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="85"></circle>
+                            </svg>
+                            <div class="skill__persents"><span></span>%</div>
+                            <div class="skill__text">
+                                <i class="fa fa-codepen"></i>&nbsp;&nbsp;Python
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <svg>
+                                <circle cx="50" cy="50" r="40"></circle>
+                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="30"></circle>
+                            </svg>
+                            <div class="skill__persents"><span></span>%</div>
+                            <div class="skill__text">
+                                <i class="fa fa-paint-brush"></i>&nbsp;&nbsp;Design
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <svg>
+                                <circle cx="50" cy="50" r="40"></circle>
+                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="50"></circle>
+                            </svg>
+                            <div class="skill__persents"><span></span>%</div>
+                            <div class="skill__text">
+                                <i class="fa fa-code-fork"></i>&nbsp;&nbsp;Git
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
             <div class="section-wrapper bg-color">
-                <section id="section-2" class="section container">Section 2</section>
+                <section id="section-2" class="section container apps">Section 2</section>
             </div>
 
-            <section id="section-3" class="section container">Section 3</section>
+            <section id="section-3" class="section container landings">Section 3</section>
 
             <div class="section-wrapper bg-color">
                 <section id="section-4" class="section container">Section 4</section>
             </div>
         </div>
 
-        <footer class="footer bg-color">
+        <footer class="footer">
             <p>Created 2020 by <a href="https://github.com/voverg" target="_blank">Voverg</a></p>
         </footer>
     </div>
