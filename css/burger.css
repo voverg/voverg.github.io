@@ -29,7 +29,6 @@ h2, .h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E0EBE8;
     padding: 20px 5%;
 }
 
@@ -136,7 +135,6 @@ h2, .h2 {
 /* -------------------- Content ----------------- */
 .section-wrapper {
     width: 100%;
-    background-color: #E0EBE8;
 }
 .section {
     display: flex;
@@ -154,13 +152,12 @@ h2, .h2 {
 .burger-menu__button {
     display: none;
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
     z-index: 30;
-    width: 70px;
+    width: 100%;
     height: 60px;
-    border-radius: 5%;
-    background-color: rgba(16, 31, 41, 0.5);
+    /*background-color: rgba(16, 31, 41, 0.5);*/
     transition: 0.4s;
 }
 
@@ -170,13 +167,13 @@ h2, .h2 {
     position: absolute;
     width: 50px;
     height: 6px;
-    background-color: #fff;
+    background-color: #45b29a;
     transition: 0.3s;
 }
 
 .burger-menu__lines {
     top: 50%;
-    left: 50%;
+    left: 10%;
     transform: translate(-50%, -50%);
 }
 
@@ -215,7 +212,7 @@ h2, .h2 {
     display: flex;
     flex-flow: column;
     height: 100%;
-    background-color: rgba(16, 31, 41, 0.9);
+    /*background-color: rgba(16, 31, 41, 0.9);*/
     overflow-y: auto;
     transition: 0.5s;
 }
@@ -240,7 +237,7 @@ h2, .h2 {
     line-height: 1.2rem;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #fff;
+    color: #45b29a;
 }
 
 .burger-menu__link:hover {
@@ -268,7 +265,6 @@ h2, .h2 {
 
 /* ------------------------ Footer ---------------------- */
 .footer {
-    background-color: #455758;
 }
 .footer p {
     text-align: center;
@@ -283,7 +279,10 @@ h2, .h2 {
 .footer p a:hover {
     color: #fff;
 }
-
+/*------------ main styles ------------------*/
+.bg-color {
+    background-color: #E0EBE8;
+}
 
 /* ------------------Responsive css -------------------- */
 @media (max-width: 960px) {
