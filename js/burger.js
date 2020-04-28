@@ -8,17 +8,13 @@ const button = burgerMenu.querySelector('.burger-menu__button');
 const burgerNav = burgerMenu.querySelector('.burger-menu__nav');
 const overlay = burgerMenu.querySelector('.burger-menu__overlay');
 // Progress bars elements
+const aboutEl = document.querySelector('.about');
 const circles = document.querySelectorAll('.progress__circle');
 const radius = circles[0].r.baseVal.value;
 const circumference = 2 * Math.PI * radius;
 const persentsEl = document.querySelectorAll('.skill__persents span');
 
 // Progress bar
-circles.forEach((elem, index) => {
-    const persent = elem.dataset.persent;
-    setProgress(persent, index);
-})
-
 function setProgress(persent, index) {
     let current = 0;
     const progress = circumference / 100 * persent;
@@ -31,6 +27,18 @@ function setProgress(persent, index) {
         }
         current++;
     }, 1)
+}
+
+let checkAnimate = 0;
+function startAnimate() {
+    if (checkAnimate > 0) return
+
+    circles.forEach((elem, index) => {
+        const persent = elem.dataset.persent;
+        setProgress(persent, index);
+    })
+
+    checkAnimate++;
 }
 
 // Main nav
@@ -68,13 +76,19 @@ function smoothScroll(event, link) {
     document.querySelector('' + href).scrollIntoView({
         behavior: 'smooth',
         block: 'start'
-    }) 
+    })
 }
 
 window.addEventListener('scroll', function() {
+    //show animation main nav
     if(window.pageYOffset > 200){
         mainNav.classList.add('main-nav__fixed');
     } else{
         mainNav.classList.remove('main-nav__fixed');
+    }
+    // Show animation progress bar
+    let checkAnimate = 0;
+    if (window.pageYOffset > 590) {
+        startAnimate();
     }
 })
