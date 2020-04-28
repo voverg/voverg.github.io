@@ -13,7 +13,7 @@ function toggleMenu() {
 
 function smoothScroll(event, link) {
     event.preventDefault();
-    const href = link.getAttribute('href');
+    const href = link.getAttribute('href') || link.dataset.href;
     document.querySelector('' + href).scrollIntoView({
         behavior: 'smooth',
         block: 'start'
@@ -24,7 +24,7 @@ function smoothScroll(event, link) {
 // Main nav
 mainNav.addEventListener('click', event => {
     link = event.target;
-    if (link.classList.contains('main-nav__link') || link.classList.contains('logo__link')) {
+    if (link.classList.contains('main-nav__link') || link.classList.contains('logo__link') || link.classList.contains('logo__img')) {
         smoothScroll(event, link);
     }
 })
