@@ -336,13 +336,41 @@ a.work-link {
 .text h3 {
     color: orange;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 0 0 15px 0;
 }
 .text p {
     color: #fff;
     font-size: 0.8rem;
 }
 /*end of block with animation hover effect*/
+
+/*-------------- Landings --------------------*/
+.landings__title {
+    display: flex;
+    padding: 20px;
+}
+.landings__title img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.landings__title p {
+    position: relative;
+    padding: 5px;
+    background-color: #45b29a;
+    border-radius: 10px;
+    color: #fff;
+}
+.landings__title p::after {
+content: ''; 
+position: absolute;
+right: -40px; 
+top: 20px;
+border: 20px solid transparent;
+border-left: 20px solid #45b29a;
+}
 
 /* -------------------- css burger menu ------------------------ */
 .burger-menu__button {
@@ -517,6 +545,12 @@ a.work-link {
 
     a.work-link {
         width: 100%;
+    }
+    .text h3 {
+        font-size: 1.5rem;
+    }
+    .text p {
+        font-size: 1.1rem;
     }
 
     .burger-menu__button {
