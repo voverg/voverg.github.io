@@ -186,7 +186,8 @@ svg {
     position: relative;
     width: 100px;
     height: 100px;
-    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
 }
 svg circle {
     width: 80%;
@@ -211,6 +212,7 @@ svg circle:nth-child(2) {
     transform: translate(-50%);
 }
 .skill__text {
+    padding-bottom: 20px;
     text-align: center;
     color: #45b29a;
     font-weight: 600;
@@ -384,6 +386,10 @@ svg circle:nth-child(2) {
     }
     .header h1 {
         padding-top: 120px;
+    }
+
+    .skill {
+        width: 30%;
     }
 
     .burger-menu__button {
