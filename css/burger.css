@@ -29,7 +29,6 @@ p {
 
 .header {
     font-family: 'Neucha', cursive;
-    border: 1px solid black;
     min-height: 90vh;
 }
 
@@ -155,7 +154,6 @@ p {
     min-height: 90vh;
     padding: 50px 10px 10px 10px;
     color: #555;
-    border: 1px solid #000;
 }
 
 /*------------ About --------------------*/
@@ -168,6 +166,7 @@ p {
 }
 .about__title p {
     margin-top: 10px;
+    padding: 0 10px;
 }
 .about__skills {
     padding: 50px 0 30px;
@@ -237,7 +236,6 @@ svg circle:nth-child(2) {
     position: relative;
     padding: 5px;
     background-color: #fff;
-    /*border: 3px solid #f19c44;*/
     border-radius: 10px;
 }
 .apps__title p::before {
@@ -252,11 +250,14 @@ border-right: 20px solid #fff;
 .works {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px 0;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 10px;
 }
 a.work-link {
-    display: block;
+    display: flex;
     width: 25%;
 }
 .works__item {
@@ -265,6 +266,7 @@ a.work-link {
     margin: 10px;
     cursor: pointer;
     overflow: hidden;
+    border: 1px solid #555;
     border-radius: 3px;
 }
 .works__item img {
@@ -369,6 +371,36 @@ right: -40px;
 top: 20px;
 border: 20px solid transparent;
 border-left: 20px solid #45b29a;
+}
+
+/*--------------- Contacts --------------*/
+.contacts {
+    display: flex;
+    margin: 30px 20px 0;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+.contacts__info {
+    width: 50%;
+    padding: 0 20px;
+}
+.contacts__info p {
+    margin: 20px 0;
+    text-align: left;
+}
+span.weight {
+    font-weight: bold;
+}
+.contacts__social {
+    margin: 40px auto;
+}
+.contacts__social a .fa {
+    font-size: 2rem;
+    color: #4A76A8;
+    transition: 0.3s;
+}
+.contacts__social a .fa:hover {
+    opacity: 0.7;
 }
 
 /* -------------------- css burger menu ------------------------ */
@@ -550,6 +582,13 @@ border-left: 20px solid #45b29a;
     }
     .text p {
         font-size: 1.1rem;
+    }
+
+    .contacts__info {
+        width: 100%;
+    }
+    .contacts__social {
+        text-align: center;
     }
 
     .burger-menu__button {
