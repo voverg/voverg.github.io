@@ -152,7 +152,7 @@ p {
 }
 .section {
     min-height: 90vh;
-    padding: 50px 10px 10px 10px;
+    padding: 50px 0 10px 0;
     color: #555;
 }
 
@@ -236,6 +236,7 @@ svg circle:nth-child(2) {
     position: relative;
     padding: 5px;
     background-color: #fff;
+    box-shadow: 2px 2px 15px #99a5cc;
     border-radius: 10px;
 }
 .apps__title p::before {
@@ -251,14 +252,15 @@ border-right: 20px solid #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 20px;
+    margin: 20px 10px;
     padding: 20px 10px;
-    background-color: rgb(255, 255, 255, 0.7);
+    /*box-shadow: 0 0 20px #ccd0dc;*/
     border-radius: 10px;
 }
 a.work-link {
     display: flex;
     width: 25%;
+    box-shadow: 2px 2px 15px #99a5cc;
 }
 .works__item {
     position: relative;
@@ -361,6 +363,7 @@ a.work-link {
     position: relative;
     padding: 5px;
     background-color: #45b29a;
+    box-shadow: 2px 2px 15px #99a5cc;
     border-radius: 10px;
     color: #fff;
 }
@@ -379,6 +382,7 @@ border-left: 20px solid #45b29a;
     margin: 30px 20px 0;
     background-color: rgb(255, 255, 255, 0.7);
     border-radius: 10px;
+    box-shadow: 2px 2px 15px #99a5cc;
 }
 .contacts__info {
     width: 50%;
@@ -389,6 +393,7 @@ border-left: 20px solid #45b29a;
     text-align: left;
 }
 span.weight {
+    font-size: 1.1rem;
     font-weight: bold;
 }
 .contacts__social {
@@ -402,6 +407,7 @@ span.weight {
 .contacts__social a .fa:hover {
     opacity: 0.7;
 }
+
 
 /* -------------------- css burger menu ------------------------ */
 .burger-menu__button {
@@ -589,6 +595,9 @@ span.weight {
     }
     .contacts__social {
         text-align: center;
+    }
+    .contacts__photo {
+        display: none;
     }
 
     .burger-menu__button {
