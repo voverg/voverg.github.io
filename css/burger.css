@@ -28,6 +28,9 @@ p {
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: 'Neucha', cursive;
     min-height: 90vh;
 }
@@ -52,9 +55,9 @@ p {
     height: 100%;
 }
 .logo a img {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
     background-color: #fff;
     border-radius: 50%;
 }
@@ -139,10 +142,10 @@ p {
     font-weight: 500;
 }
 .header-img {
-    height: 300px;
-    margin-top: 50px;
-    background: url('../img/prog_beard.png') no-repeat center;
-    background-size: contain;
+    min-height: 350px;
+    margin-top: 30px;
+    background: url('../img/prog-large.jpg') no-repeat center;
+    background-size: cover;
 }
 
 
@@ -582,6 +585,14 @@ span.weight {
 }
 
 @media (max-width: 720px) {
+    .header-img {
+        height: 300px;
+        margin-top: 50px;
+        background: url('../img/prog_beard.png') no-repeat center;
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+
     .container {
         width: 100%;
     }
