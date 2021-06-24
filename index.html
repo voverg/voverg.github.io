@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="section-wrapper header">
     <!-- Начало секции с бургер меню -->
     <div class="burger-menu container">
       <a href="#" class="burger-menu__button">
@@ -29,11 +29,11 @@
       <nav class="burger-menu__nav">
         <a href="#top" class="burger-menu__nav--logo nav-item-js"></a>
         <a href="#top" class="burger-menu__link nav-item-js">Главная</a>
-        <a href="#section-1" class="burger-menu__link nav-item-js">Обо мне</a>
-        <a href="#section-2" class="burger-menu__link nav-item-js">Вёрстка</a>
-        <a href="#section-3" class="burger-menu__link nav-item-js">Веб приложения</a>
-        <a href="#section-4" class="burger-menu__link nav-item-js">SPA</a>
-        <a href="#section-5" class="burger-menu__link nav-item-js">Контакты</a>
+        <a href="#about" class="burger-menu__link nav-item-js">Обо мне</a>
+        <a href="#layout" class="burger-menu__link nav-item-js">Вёрстка</a>
+        <a href="#web-apps" class="burger-menu__link nav-item-js">Веб-приложения</a>
+        <a href="#spa" class="burger-menu__link nav-item-js">SPA</a>
+        <a href="#contacts" class="burger-menu__link nav-item-js">Контакты</a>
       </nav>
 
       <div class="burger-menu__overlay"></div>
@@ -41,12 +41,24 @@
     <!-- Конец секции с бургер меню -->
   </header>
 
-  <section class="container" id="top">Main page</section>
-  <section class="container" id="section-1">section 1</section>
-  <section class="container" id="section-2">section 2</section>
-  <section class="container" id="section-3">section 3</section>
-  <section class="container" id="section-4">section 4</section>
-  <section class="container" id="section-5">section 5</section>
+  <section class="section-wrapper" id="top">
+    <div class="container">main page</div>
+  </section>
+  <section class="section-wrapper bg-white" id="about">
+    <div class="container">Обо мне</div>
+  </section>
+  <section class="section-wrapper" id="layout">
+    <div class="container">Вёрстка</div>
+  </section>
+  <section class="section-wrapper bg-white" id="web-apps">
+    <div class="container">Веб-приложения</div>
+  </section>
+  <section class="section-wrapper" id="spa">
+    <div class="container">SPA(single page applications)</div>
+  </section>
+  <section class="section-wrapper bg-white" id="contacts">
+    <div class="container">Контакты</div>
+  </section>
 
   <footer class="footer">
     <p>Created 2020 by <a href="https://github.com/voverg" target="_blank">Voverg</a></p>
