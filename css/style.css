@@ -4,8 +4,9 @@
   --bg-color: #3a4156;
   --burger-bg-color: rgba(58, 65, 86, .9);
   --header-color: #45b29a;
-  --font-color: #555;
   --footer-color: #2e373c;
+  --font-color: #555;
+  --hover-color: #f19c44;
 }
 
 * {
@@ -61,10 +62,31 @@ header, header a {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: var(--bg-color);
+  min-height: 70px;
+}
+
+.header__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: inherit;
+  z-index: 20;
+  transition: 0.7s ease-in;
+}
+
+._scroll .header__wrapper{
+  background-color: var(--burger-bg-color);
+  animation: showElement .7s ease-in;
+}
+._scroll .burger-menu__logo {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Menu */
@@ -107,8 +129,14 @@ header, header a {
 }
 
 .burger-menu__link:hover {
-  color: #f19c44;
+  color: var(--hover-color);
+  text-shadow: 0 0 2px var(--hover-color), 0 0 10px var(--hover-color);
 }
+
+.burger-menu__link.active {
+  color: var(--hover-color);
+}
+
 .burger-menu__link:before {
   content: '';
   bottom: 0;
@@ -116,13 +144,14 @@ header, header a {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #f19c44;
+  background-color: var(--hover-color);
+  box-shadow: 0 0 2px var(--hover-color), 0 0 10px var(--hover-color);
   transition: 0.3s;
   transform: scaleX(0);
 }
 .burger-menu__link:hover:before {
   width: 100%;
-  transform: scaleX(0.8);
+  transform: scaleX(0.9);
 }
 
 /* --------------- Content ---------------------- */
@@ -130,13 +159,10 @@ header, header a {
 section>div.container {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 3rem;
 }
 
-
-
-/*.
 @keyframes showElement{
   0% {
     opacity: 0;
@@ -147,7 +173,7 @@ section>div.container {
     opacity: 1;
     top: 0;
   }
-}*/
+}
 
 
 /* ------------------------ Footer ---------------------- */
