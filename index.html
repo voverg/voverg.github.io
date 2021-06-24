@@ -1,271 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Это мой сайт-портфолио, написанный на Html, Css и чистом JavaScript">
-    <meta name="keywords" content="портфолио">
-    <meta name="og:image" content="img/voverg-social.png">
-    <title>Voverg</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/cat.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/burger.css">
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="Это мой сайт-портфолио, написанный на Html, Css и чистом JavaScript">
+  <meta name="keywords" content="портфолио">
+  <meta name="og:image" content="img/voverg-social.png">
+  <title>Voverg</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/cat.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <header>
     <!-- Начало секции с бургер меню -->
-    <div class="burger-menu">
-        <a href="#" class="burger-menu__button">
-            <span class="burger-menu__lines"></span>
-            <span class="burger-menu__title">MENU</span>
-        </a>
+    <div class="burger-menu container">
+      <a href="#" class="burger-menu__button">
+        <span class="burger-menu__lines"></span>
+        <span class="burger-menu__title">MENU</span>
+      </a>
 
-        <nav class="burger-menu__nav bg-color">
-            <img src="img/cat.png" alt="" class="burger-img">
-            <a href="#top" class="burger-menu__link">Главная</a>
-            <a href="#section-1" class="burger-menu__link">Обо мне</a>
-            <a href="#section-2" class="burger-menu__link">Веб приложения</a>
-            <a href="#section-3" class="burger-menu__link">Лендинги</a>
-            <a href="#section-4" class="burger-menu__link">Контакты</a>
-        </nav>
+      <a href="#top" class="burger-menu__logo nav-item-js"></a>
 
-        <div class="burger-menu__overlay"></div>
+      <nav class="burger-menu__nav">
+        <a href="#top" class="burger-menu__nav--logo nav-item-js"></a>
+        <a href="#top" class="burger-menu__link nav-item-js">Главная</a>
+        <a href="#section-1" class="burger-menu__link nav-item-js">Обо мне</a>
+        <a href="#section-2" class="burger-menu__link nav-item-js">Вёрстка</a>
+        <a href="#section-3" class="burger-menu__link nav-item-js">Веб приложения</a>
+        <a href="#section-4" class="burger-menu__link nav-item-js">SPA</a>
+        <a href="#section-5" class="burger-menu__link nav-item-js">Контакты</a>
+      </nav>
+
+      <div class="burger-menu__overlay"></div>
     </div>
     <!-- Конец секции с бургер меню -->
+  </header>
 
-    <div id="top" class="wrapper">
-        <div class="section-wrapper bg-color">
-            <header class="header container">
-                <nav class="main-nav bg-color">
-                    <div class="logo">
-                        <a href="#top" class="logo__link">
-                            <img src="img/cat.png" class="logo__img" alt="logo"  data-href="#top">
-                        </a>
-                    </div>
-                    <ul>
-                        <li><a href="#top" class="main-nav__link">Главная</a></li>
-                        <li><a href="#section-1" class="main-nav__link">Обо мне</a></li>
-                        <li><a href="#section-2" class="main-nav__link">Веб приложения</a></li>
-                        <li><a href="#section-3" class="main-nav__link">Лендинги</a></li>
-                        <li><a href="#section-4" class="main-nav__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <h1>I'm Voverg</h1>
-                <p>веб разработчик</p>
-                <div class="header-img">
-                    <!-- <img src="img/prog_beard.png" alt="proger"> -->
-                </div>
-            </header>
-        </div>
+  <section class="container" id="top">Main page</section>
+  <section class="container" id="section-1">section 1</section>
+  <section class="container" id="section-2">section 2</section>
+  <section class="container" id="section-3">section 3</section>
+  <section class="container" id="section-4">section 4</section>
+  <section class="container" id="section-5">section 5</section>
 
-        <div class="content">
-            <section id="section-1" class="section container about">
-                <div class="about__title">
-                    <img src="img/vovka_draw_cut-photo.jpg" alt="my avotar">
-                    <h2>Привет</h2>
-                    <p>Меня зовут Владимир. Я веб-разработчик из России, г. Чебоксары.
-                        Я увлекаюсь разработкой веб-приложений, люблю изучать прогаммирование и экспериментировать.</p>
-                </div>
-                <div class="about__skills">
-                    <h2>Мои навыки в<br>веб-разработке</h2>
-                    <div class="progress-skills">
-                        <div class="skill">
-                            <svg>
-                                <circle cx="50" cy="50" r="40"></circle>
-                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="90"></circle>
-                            </svg>
-                            <div class="skill__persents"><span>0</span>%</div>
-                            <div class="skill__text">
-                                <i class="fa fa-html5"></i>&nbsp;&nbsp;Html
-                            </div>
-                        </div>
+  <footer class="footer">
+    <p>Created 2020 by <a href="https://github.com/voverg" target="_blank">Voverg</a></p>
+  </footer>
+</div>
 
-                        <div class="skill">
-                            <svg>
-                                <circle cx="50" cy="50" r="40"></circle>
-                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="90"></circle>
-                            </svg>
-                            <div class="skill__persents"><span>0</span>%</div>
-                            <div class="skill__text">
-                                <i class="fa fa-css3"></i>&nbsp;&nbsp;Css
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <svg>
-                                <circle cx="50" cy="50" r="40"></circle>
-                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="80"></circle>
-                            </svg>
-                            <div class="skill__persents"><span>0</span>%</div>
-                            <div class="skill__text">
-                                <i class="fa fa-code"></i>&nbsp;JavaScript
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <svg>
-                                <circle cx="50" cy="50" r="40"></circle>
-                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="85"></circle>
-                            </svg>
-                            <div class="skill__persents"><span>0</span>%</div>
-                            <div class="skill__text">
-                                <i class="fa fa-codepen"></i>&nbsp;&nbsp;Python
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <svg>
-                                <circle cx="50" cy="50" r="40"></circle>
-                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="30"></circle>
-                            </svg>
-                            <div class="skill__persents"><span>0</span>%</div>
-                            <div class="skill__text">
-                                <i class="fa fa-paint-brush"></i>&nbsp;&nbsp;Design
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <svg>
-                                <circle cx="50" cy="50" r="40"></circle>
-                                <circle cx="50" cy="50" r="40" class="progress__circle" data-persent="50"></circle>
-                            </svg>
-                            <div class="skill__persents"><span>0</span>%</div>
-                            <div class="skill__text">
-                                <i class="fa fa-code-fork"></i>&nbsp;&nbsp;Git
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <div class="section-wrapper bg-color">
-                <section id="section-2" class="section container apps">
-                    <h2>Веб приложения</h2>
-                    <div class="apps__title">
-                        <img src="img/vovka_draw_cut-photo.jpg" alt="my avatar">
-                        <p>Веб приложения отличаются об обычных сайтов тем, что обладают бОльшим фунционалом
-                            и работают гораздо быстрее за счёт того, что не требуют перезагрузки страницы.<br>
-                        <br>Ниже вы увидите примеры моих приложений (ссылки откроются в новой вкладке).</p>
-                    </div>
-
-                    <div class="works">
-
-                        <a href="https://voverg.github.io/good-todo/" class="work-link" target="_blank">
-                            <div class="works__item">
-                                <img src="img/todo_app_screen.jpg" alt="todo application" class="works__img">
-                                <div class="text">
-                                    <h3>Менеджер задач</h3>
-                                    <p>Это простой менеджер задач, написанный на html, css и чистом javascript</p>
-                                </div>
-                                <div class="works__item__title">Менеджер задач</div>
-                            </div>
-                        </a>
-
-                        <a href="https://voverg.github.io/quiz/" class="work-link" target="_blank">
-                            <div class="works__item">
-                                <img src="img/quiz_app_screen.jpg" alt="todo application" class="works__img">
-                                <div class="text">
-                                    <h3>Викторина</h3>
-                                    <p>Это приложение-викторина, написанное на html, css и чистом javascript</p>
-                                </div>
-                                <div class="works__item__title">Викторина</div>
-                            </div>
-                        </a>
-                       
-                        <a href="https://voverg.github.io/simple-kanban" class="work-link" target="_blank">
-                            <div class="works__item">
-                                <img src="img/kanban_app_screen.jpg" alt="todo application" class="works__img">
-                                <div class="text">
-                                    <h3>Канбан</h3>
-                                    <p>Менеджер задач в стиле "Канбан", написанный на html, css и чистом javascript</p>
-                                </div>
-                                <div class="works__item__title">Канбан</div>
-                            </div>
-                        </a>
-
-                        <a href="https://voverg.github.io/budget" class="work-link" target="_blank">
-                            <div class="works__item">
-                                <img src="img/budget_app_screen.jpg" alt="todo application" class="works__img">
-                                <div class="text">
-                                    <h3>Бюджет</h3>
-                                    <p>Простое приложение для учёта личных финансов, написанный на html, css и чистом javascript</p>
-                                </div>
-                                <div class="works__item__title">Бюджет</div>
-                            </div>
-                        </a>
-
-                    </div>
-                </section>
-            </div>
-
-            <section id="section-3" class="section container landings">
-                <h2>Лендинги</h2>
-                <div class="landings__title">
-                    <p>Лендинги - это простые одностраничные сайты, целью которых является побудить
-                        аудиторию зделать заявку на размещаемый на сайте продукт.<br>
-                    <br>Ниже вы увидите примеры моих лендингов (ссылки откроются в новой вкладке).</p>
-                    <img src="img/vovka_draw_cut-photo.jpg" alt="my avatar">
-                </div>
-
-                <div class="works">
-
-                    <a href="https://voverg.github.io/hotel-landing/" class="work-link" target="_blank">
-                        <div class="works__item">
-                            <img src="img/hotel_landing_screen.jpg" alt="todo application" class="works__img">
-                            <div class="text">
-                                <h3>Ленднинг отеля</h3>
-                                <p>Это мой первый лендинг, написанный с помощью float'ов на Css для
-                                    понимания того, как это работает.</p>
-                            </div>
-                            <div class="works__item__title">Лендинг отеля</div>
-                        </div>
-                    </a>
-
-
-                </div>
-            </section>
-
-            <div class="section-wrapper bg-color">
-                <section id="section-4" class="section container">
-                    <h2>Контакты</h2>
-                    <div class="contacts">
-                        <div class="contacts__info">
-                            <p>Я очень редко пользуюсь телефонными звонками, поэтому
-                                наиболее удобное для меня средство связи - это <span class="weight">электронная почта</span>.
-                                Но также со мной можно связаться через социальные сети и мессенджеры (но лучше через эл. почту).</p>
-                            <p><span class="fa fa-envelope"></span>&nbsp;&nbsp;&nbsp;E-mail: <span class="weight">voverg81@mail.ru</span></p>
-                            <p><span class="fa fa-telegram"></span>&nbsp;&nbsp;&nbsp;Telegram: <span class="weight">@voverg81</span></p>
-                            <p><span class="fa fa-skype"></span>&nbsp;&nbsp;&nbsp;Skype: <span class="weight">voverg81</span></p>
-
-                            <div class="contacts__social">
-                                <a href="https://vk.com/vovkaproger" target="_blank"><span class="fa fa-vk"></span></a>&nbsp;&nbsp;&nbsp;
-
-                                <a href="https://www.linkedin.com/in/voverg/" target="_blank"><span class="fa fa-linkedin"></span></a>&nbsp;&nbsp;&nbsp;
-
-                                <a href="https://github.com/voverg" target="_blank"><span class="fa fa-github"></span></a>&nbsp;&nbsp;&nbsp;
-
-                                <a href="https://www.facebook.com/voverg81" target="_blank"><span class="fa fa-facebook-square"></span></a>&nbsp;&nbsp;&nbsp;
-
-                                <a href="https://www.instagram.com/voverg/" target="_blank"><span class="fa fa-instagram"></span></a>
-                            </div>
-                        </div>
-                        <div class="contacts__photo">
-                            <img src="img/man-hand.png" alt="man-hand">
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <p>Created 2020 by <a href="https://github.com/voverg" target="_blank">Voverg</a></p>
-        </footer>
-    </div>
-    
-    <script src="js/burger.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
