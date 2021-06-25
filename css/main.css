@@ -4,7 +4,7 @@
   --burger-bg-color: rgba(58, 65, 86, .9);
   --header-color: #45b29a;
   --footer-color: #2e373c;
-  --font-color: #555;
+  --font-color: #777;
   --hover-color: #f19c44;
 }
 
@@ -35,9 +35,18 @@ h1 {
   color: #fff;
 }
 
-h2 {
-  font-size: 2rem;
+h2, h3 {
   font-weight: 300;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 30px 0 15px;
+  font-size: 1.5rem;
 }
 
 p {
@@ -57,7 +66,6 @@ p {
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* ------------- Header ----------------- */
@@ -96,7 +104,8 @@ p {
 section>div.container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
+  padding: 40px 20px;
   font-size: 3rem;
 }
 
@@ -135,6 +144,30 @@ section>div.container {
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
+}
+
+/*Skills block*/
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__item {
+  width: 30%;
+  padding: 10px 0;
+}
+
+.skills__item i, .skills__item p {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.skills__item i {
+  padding: 10px;
+  font-size: 5rem;
+  color: var(--hover-color);
 }
 
 /* --------------- Animation ------------------ */
@@ -180,6 +213,10 @@ section>div.container {
 @media (max-width: 767px) {
   .container {
     width: 100%;
+  }
+
+  section>div.container {
+    padding: 30px 20px;
   }
 
   /*main page*/
