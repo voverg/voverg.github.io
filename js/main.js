@@ -57,7 +57,7 @@ const headerObserver = new IntersectionObserver((entries, observer) => {
   } else {
     header.classList.add('_scroll');
   }
-}, {threshold: 1});
+}, {threshold: 1.0});
 
 headerObserver.observe(header);
 
