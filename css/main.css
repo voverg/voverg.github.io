@@ -1,0 +1,211 @@
+:root {
+  --max-width-container: 991px;
+  --bg-color: #3a4156;
+  --burger-bg-color: rgba(58, 65, 86, .9);
+  --header-color: #45b29a;
+  --footer-color: #2e373c;
+  --font-color: #555;
+  --hover-color: #f19c44;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, sans-serif;
+  color: var(--header-color);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+p {
+  color: var(--font-color);
+  font-size: 1.2rem;
+}
+
+.bg-white {
+  background-color: #fff;
+  color: var(--font-color);
+}
+
+.section-wrapper {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ------------- Header ----------------- */
+.header, .header a {
+  font-family: 'Neucha', cursive;
+  color: var(--header-color);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-color);
+  min-height: 70px;
+}
+
+.header__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: inherit;
+  z-index: 20;
+  transition: 0.7s ease-in;
+}
+
+._scroll .header__wrapper{
+  background-color: var(--burger-bg-color);
+  animation: showElement .7s ease-in;
+}
+._scroll .burger-menu__logo {
+  padding: 10px;
+}
+
+/* --------------- Content ---------------------- */
+section>div.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 3rem;
+}
+
+/*main page*/
+#top {
+  padding-top: 75px;
+}
+#top .container {
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+#top .container::after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../img/bg-main-page.png') no-repeat center;
+  background-size: auto 80%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+}
+
+#top .container img {
+  display: block;
+  width: 30%;
+  margin: 30px;
+  border-radius: 50%;
+}
+
+#top .container p {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* --------------- Animation ------------------ */
+@keyframes showElement{
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+
+/* ------------------------ Footer ---------------------- */
+.footer {
+  background-color: var(--footer-color);
+}
+.footer p {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  padding: 10px;
+}
+.footer p a {
+  color: #45b29a;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+.footer p a:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 2px var(--hover-color), 0 0 10px var(--hover-color);
+}
+
+
+/* ------------------Responsive css -------------------- */
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  /*main page*/
+  #top {
+    padding-top: 70px;
+  }
+  #top .container {
+    justify-content: space-between;
+    padding: 40px 20px 80px;
+    background: url('../img/prog_beard.png') no-repeat center;
+    background-size: 95%;
+    background-attachment: fixed;
+    min-height: 90vh;
+  }
+  #top .container::after {
+    background: none;
+  }
+  #top .container img {
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
