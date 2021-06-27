@@ -86,6 +86,13 @@ const layoutEl = document.querySelector('#layout .projects');
 const webAppsEl = document.querySelector('#web-apps .projects');
 const spaEl = document.querySelector('#spa .projects');
 
-createProjectsItem(layoutEl, layoutData);
-createProjectsItem(webAppsEl, webAppsData);
-createProjectsItem(spaEl, spaData);
+createProjectsItem(layoutEl, layoutData, 'opacity');
+createProjectsItem(webAppsEl, webAppsData, 'translate');
+createProjectsItem(spaEl, spaData, 'grow');
+
+// Анимация для созданных выше блоков projects
+const projectEls = document.querySelectorAll('.projects__item');
+
+window.addEventListener('scroll', () => {
+  createBlockScrollAnimation(projectEls);
+});
