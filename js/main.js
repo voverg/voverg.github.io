@@ -80,3 +80,12 @@ function changeActiveMenuItem(sectionId) {
   links.forEach((item) => item.classList.remove('active'));
   menuItem.classList.add('active');
 }
+
+// Добавление проектов в блоки projects
+const layoutEl = document.querySelector('#layout .projects');
+const webAppsEl = document.querySelector('#web-apps .projects');
+const spaEl = document.querySelector('#spa .projects');
+
+createProjectsItem(layoutEl, layoutData);
+createProjectsItem(webAppsEl, webAppsData);
+createProjectsItem(spaEl, spaData);

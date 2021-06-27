@@ -45,13 +45,14 @@ h2 {
 }
 
 h3 {
-  margin: 30px 0 15px;
+  margin: 20px 0 15px;
   font-size: 1.5rem;
 }
 
 p {
+  padding-bottom: 10px;
   color: var(--font-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .bg-white {
@@ -156,7 +157,7 @@ section>div.container {
 }
 
 .skills__item {
-  width: 30%;
+  width: 33.33%;
   padding: 10px 0;
 }
 
@@ -168,7 +169,7 @@ section>div.container {
 
 .skills__item i {
   padding: 10px;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--hover-color);
 }
 
@@ -176,20 +177,20 @@ section>div.container {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 20px;
 }
 
 .projects__item {
-  width: 30%;
+  max-width: 33.33%;
   padding: 10px 5px;
 }
 
 .card {
+  height: 100%;
   padding: 5px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #777;
+  box-shadow: 0 0 5px -2px #777;
 }
 .card img {
   display: block;
@@ -277,8 +278,8 @@ section>div.container {
     margin-top: 10px;
   }
   .projects__item {
-    padding: 5px;
     width: 100%;
+    max-width: 100%;
   }
   .card h4 {
   font-size: 1.5rem;
