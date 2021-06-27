@@ -1,11 +1,12 @@
 :root {
-  --max-width-container: 991px;
+  --max-width-container: 900px;
   --bg-color: #3a4156;
   --burger-bg-color: rgba(58, 65, 86, .9);
   --header-color: #45b29a;
   --footer-color: #2e373c;
   --font-color: #777;
   --hover-color: #f19c44;
+  --link-color: #37beff;
 }
 
 * {
@@ -53,6 +54,14 @@ p {
   padding-bottom: 10px;
   color: var(--font-color);
   font-size: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  transition: opacity .3s ease-out;
+}
+a:hover {
+  opacity: .7;
 }
 
 .bg-white {
@@ -206,6 +215,57 @@ section>div.container {
   text-align: center;
 }
 
+/*Contacts section*/
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.contacts__items, .contacts__img {
+  width: 50%;
+}
+
+.contacts__img {
+  background: url('../img/contacts.png') no-repeat center;
+  background-size: contain;
+  height: 200px;
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+}
+.contacts__item {
+  display: flex;
+  padding-top: 20px;
+}
+.contacts__item i, .contacts__item p {
+  color: var(--link-color);
+}
+.contacts__item p {
+  padding: 0 0 0 10px;
+}
+.contacts__item i {
+  font-size: 1.2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 20px 0;
+}
+.social__item i {
+  font-size: 3rem;
+  color: var(--link-color);
+  text-shadow: 0 0 5px -2px #777;
+}
+
 /* --------------- Animation ------------------ */
 @keyframes showElement{
   0% {
@@ -283,10 +343,29 @@ section>div.container {
   }
   .card h4 {
   font-size: 1.5rem;
-}
-.card p {
-  font-size: .9rem;
-}
+  }
+  .card p {
+    font-size: .9rem;
+  }
+
+  .contacts__img {
+    width: 150px;
+    height: 150px;
+    background: url('../img/vovka_draw_cut-photo.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .contacts__items {
+    padding: 0;
+  }
+
+  .social {
+    width: 100%;
+  }
+  .social__item i {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 479px) {
