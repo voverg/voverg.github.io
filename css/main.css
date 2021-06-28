@@ -216,17 +216,19 @@ section>div.container {
   text-align: center;
 }
 
+/*Стили для анимации блоков projects__item*/
 .translate {
   transform: translateX(400%);
-  transition: transform 0.7s ease-in;
+  transition: transform 0.7s ease-out;
 }
 .opacity {
   opacity: 0;
-  transition: opacity 0.9s ease;
+  transform: translateX(-50px);
+  transition: transform .8s ease-out, opacity 0.6s ease-out;
 }
 .grow {
   transform: scale(0);
-  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-out;
 }
 .projects__item.show {
   transform: translateX(0);

@@ -17,7 +17,7 @@ function createProjectsItem(block, data, showClass='grow') {
 }
 
 function createBlockScrollAnimation(blocks) {
-  // Получить 5/4 высоты экрана
+  // Получить 4/5 высоты экрана
   const triggerBottom = window.innerHeight / 5 * 4;
 
   blocks.forEach((block) => {
