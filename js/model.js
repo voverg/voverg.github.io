@@ -3,7 +3,7 @@ const layoutData = [
     title: 'Simple store',
     link: 'https://voverg.github.io/simple-store/',
     img: 'img/projects/simple-store.png',
-    description: 'Страничка интернет-магазина с выбором товара и реализацией корзины'
+    description: 'Страничка интернет-магазина с выбором товара и реализацией работающей корзины'
   },
   {
     title: 'Hotel landing',
