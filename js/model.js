@@ -57,7 +57,7 @@ const spaData = [
     title: 'Todo',
     link: 'https://voverg.github.io/todo-react/',
     img: 'img/projects/todo-react.png',
-    description: 'Небольшое приложение - список дел, написанный на React'
+    description: 'Небольшое приложение - список дел, написанное на React'
   },
   // {
   //   title: '',
