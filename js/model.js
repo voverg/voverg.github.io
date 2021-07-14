@@ -59,6 +59,12 @@ const spaData = [
     img: 'img/projects/todo-react.png',
     description: 'Небольшое приложение - список дел, написанное на React'
   },
+  {
+    title: 'Chat',
+    link: 'https://chat-react-voverg.web.app/',
+    img: 'img/projects/chat-react.png',
+    description: 'Небольшое приложение - чат, где каждый может написать сообщение. Написан на React, в качестве базы данных - Firebase.'
+  },
   // {
   //   title: '',
   //   link: '',
