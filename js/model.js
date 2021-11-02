@@ -59,6 +59,12 @@ const spaData = [
     img: 'img/projects/todo-react.png',
     description: 'Небольшое приложение - список дел, написанное на React'
   },
+  {
+    title: 'Blog',
+    link: 'https://voverg.github.io/react-blog/',
+    img: 'img/projects/react-blog.png',
+    description: 'Блог с авторизацией, добавлением, удалением, поиском, сортировкой и просмотром содержимого постов, написанный на React'
+  },
   // {
   //   title: 'Chat',
   //   link: 'https://chat-react-voverg.web.app/',
