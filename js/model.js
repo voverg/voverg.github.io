@@ -65,12 +65,12 @@ const spaData = [
     img: 'img/projects/react-blog.png',
     description: 'Блог с авторизацией, добавлением, удалением, поиском, сортировкой и просмотром содержимого постов, написанный на React'
   },
-  // {
-  //   title: 'Chat',
-  //   link: 'https://chat-react-voverg.web.app/',
-  //   img: 'img/projects/chat-react.png',
-  //   description: 'Небольшое приложение - чат, где каждый может написать сообщение. Написан на React, в качестве базы данных - Firebase.'
-  // },
+  {
+    title: 'Chat',
+    link: 'https://voverg.github.io/chat-react/',
+    img: 'img/projects/chat.png',
+    description: 'Небольшое приложение - чат в реальном времени, написанное на React + Firebase.'
+  },
   // {
   //   title: '',
   //   link: '',
