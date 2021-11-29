@@ -71,6 +71,12 @@ const spaData = [
     img: 'img/projects/chat.png',
     description: 'Небольшое приложение - чат в реальном времени, написанное на React + Firebase.'
   },
+  {
+    title: 'Calendar',
+    link: 'https://voverg.github.io/react-calendar/',
+    img: 'img/projects/calendar.png',
+    description: 'Приложение - календарь, написанное на React. Создавайте, просматривайте детали и удаляйте события'
+  },
   // {
   //   title: '',
   //   link: '',
