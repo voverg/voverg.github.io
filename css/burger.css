@@ -176,16 +176,6 @@ a.burger-menu__logo i:hover {
     left: 0;
   }
 
-  .burger-menu__nav--logo {
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin-bottom: 50px;
-    border-radius: 50%;
-    background: url('../img/cat.png') #fff no-repeat center;
-    background-size: 70%;
-  }
-
   .burger-menu__link {
     width: 90%;
     margin: 0 auto;

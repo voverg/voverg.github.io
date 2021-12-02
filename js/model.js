@@ -1,86 +1,122 @@
-const layoutData = [
+const data = [
   {
+    id: 'project-1',
+    type: 'layouts',
     title: 'Simple store',
     link: 'https://voverg.github.io/simple-store/',
+    sourceLink: 'https://github.com/voverg/simple-store',
     img: 'img/projects/simple-store.png',
-    description: 'Страничка интернет-магазина с выбором товара и реализацией работающей корзины'
+    description: 'Страничка интернет-магазина с выбором товара и реализацией работающей корзины',
+    longDescription: 'Лучший способ о чем-нибудь узнать - поговорить с человеком, который разбирается в вопросе. Канал SuprotecRacing - это место встреч с людьми, которые занимаются автоспортом. Заниматься им можно только при условии, что никакой другой жизни ты не представляешь и не хочешь.',
   },
   {
+    id: 'project-2',
+    type: 'layouts',
     title: 'Hotel landing',
     link: 'https://voverg.github.io/hotel-landing/',
+    sourceLink: 'https://github.com/voverg/hotel-landing',
     img: 'img/projects/hotel-landing.png',
-    description: 'Лендинг отеля. Свёрстан на float просто для тренировки и понимания, как работает блочная модель в Css.'
-  }
-];
-
-const webAppsData = [
+    description: 'Лендинг отеля. Свёрстан на float просто для тренировки и понимания, как работает блочная модель в Css.',
+    longDescription: '',
+  },
   {
+    id: 'project-3',
+    type: 'jsapps',
     title: 'Frontend quiz',
     link: 'https://voverg.github.io/50-simple-projects/frontend-quiz/index.html',
+    sourceLink: 'https://github.com/voverg/50-simple-projects/tree/main/frontend-quiz',
     img: 'img/projects/frontend-quiz.png',
-    description: 'Викторина, в которой вы можете проверть свои знания по Html, Css и JavaScript'
+    description: 'Викторина, в которой вы можете проверть свои знания по Html, Css и JavaScript',
+    longDescription: '',
   },
   {
+    id: 'project-4',
+    type: 'jsapps',
     title: 'Kanban',
     link: 'https://voverg.github.io/simple-kanban/',
+    sourceLink: 'https://github.com/voverg/simple-kanban',
     img: 'img/projects/simple-kanban.png',
-    description: 'Небольшое приложение для создание карточек с заметками, которые можно перемещать'
+    description: 'Небольшое приложение для создание карточек с заметками, которые можно перемещать',
+    longDescription: '',
   },
   {
+    id: 'project-5',
+    type: 'jsapps',
     title: 'Piano',
     link: 'https://voverg.github.io/50-simple-projects/piano/index.html',
+    sourceLink: 'https://github.com/voverg/50-simple-projects/tree/main/piano',
     img: 'img/projects/piano.png',
-    description: 'Пианино, на котором можно играть как мышкой, так и с клавиатуры'
+    description: 'Пианино, на котором можно играть как мышкой, так и с клавиатуры',
+    longDescription: '',
   },
   {
+    id: 'project-6',
+    type: 'jsapps',
     title: 'Notes',
     link: 'https://voverg.github.io/50-simple-projects/notes-app/index.html',
+    sourceLink: 'https://github.com/voverg/50-simple-projects/tree/main/notes-app',
     img: 'img/projects/notes-app.png',
-    description: 'Создавайте, удаляйте и редактируйте заметки. Для стилизации текста можно использовать Markdown.'
+    description: 'Создавайте, удаляйте и редактируйте заметки. Для стилизации текста можно использовать Markdown.',
+    longDescription: '',
   },
   {
+    id: 'project-7',
+    type: 'jsapps',
     title: 'Budget',
     link: 'https://voverg.github.io/budget/',
+    sourceLink: 'https://github.com/voverg/budget',
     img: 'img/projects/budget.png',
-    description: 'Небольшое приложение по учёту доходов и расходов.'
+    description: 'Небольшое приложение по учёту доходов и расходов.',
+    longDescription: '',
   },
   {
+    id: 'project-8',
+    type: 'jsapps',
     title: 'Clicker',
     link: 'https://voverg.github.io/50-simple-projects/game/index.html',
+    sourceLink: 'https://github.com/voverg/50-simple-projects/tree/main/game',
     img: 'img/projects/clicker.png',
-    description: 'Игра, в которой нужно за выбранное время попасть максимальное количество раз по шарику.'
-  }
-];
-
-const spaData = [
+    description: 'Игра, в которой нужно за выбранное время попасть максимальное количество раз по шарику.',
+    longDescription: '',
+  },
   {
+    id: 'project-9',
+    type: 'spa',
     title: 'Todo',
     link: 'https://voverg.github.io/todo-react/',
+    sourceLink: 'https://github.com/voverg/todo-react',
     img: 'img/projects/todo-react.png',
-    description: 'Небольшое приложение - список дел, написанное на React'
+    description: 'Небольшое приложение - список дел, написанное на React',
+    longDescription: '',
   },
   {
+    id: 'project-10',
+    type: 'spa',
     title: 'Blog',
     link: 'https://voverg.github.io/react-blog/',
+    sourceLink: 'https://github.com/voverg/react-blog',
     img: 'img/projects/react-blog.png',
-    description: 'Блог с авторизацией, добавлением, удалением, поиском, сортировкой и просмотром содержимого постов, написанный на React'
+    description: 'Блог с авторизацией, добавлением, удалением, поиском, сортировкой и просмотром содержимого постов, написанный на React',
+    longDescription: '',
   },
   {
+    id: 'project-11',
+    type: 'spa',
     title: 'Chat',
     link: 'https://voverg.github.io/chat-react/',
+    sourceLink: 'https://github.com/voverg/chat-react',
     img: 'img/projects/chat.png',
-    description: 'Небольшое приложение - чат в реальном времени, написанное на React + Firebase.'
+    description: 'Небольшое приложение - чат в реальном времени, написанное на React + Firebase.',
+    longDescription: '',
   },
   {
+    id: 'project-12',
+    type: 'spa',
     title: 'Calendar',
     link: 'https://voverg.github.io/react-calendar/',
+    sourceLink: 'https://github.com/voverg/react-calendar',
     img: 'img/projects/calendar.png',
-    description: 'Приложение - календарь, написанное на React. Создавайте, просматривайте детали и удаляйте события'
+    description: 'Приложение - календарь, написанное на React. Создавайте, просматривайте детали и удаляйте события',
+    longDescription: '',
   },
-  // {
-  //   title: '',
-  //   link: '',
-  //   img: 'img/projects/.png',
-  //   description: ''
-  // }
 ];

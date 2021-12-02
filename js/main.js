@@ -1,13 +1,15 @@
 // Select Html elements
 const body = document.querySelector('body');
-const header = document.querySelector('header');
-const headerWrapper = document.querySelector('.header__wrapper');
-const sections = document.querySelectorAll('.section-wrapper');
+const header = body.querySelector('header');
+const headerWrapper = body.querySelector('.header__wrapper');
+const sections = body.querySelectorAll('.section-wrapper');
 // Burger menu elements
-const burgerMenu = document.querySelector('.burger-menu');
+const burgerMenu = body.querySelector('.burger-menu');
 const burgerBtn = burgerMenu.querySelector('.burger-menu__button');
-const links = document.querySelectorAll('.burger-menu__link');
+const links = body.querySelectorAll('.burger-menu__link');
 const overlay = burgerMenu.querySelector('.burger-menu__overlay');
+// Popup
+const popup = body.querySelector('.popup');
 
 
 // Burger menu
@@ -82,17 +84,47 @@ function changeActiveMenuItem(sectionId) {
 }
 
 // Добавление проектов в блоки projects
-const layoutEl = document.querySelector('#layout .projects');
-const webAppsEl = document.querySelector('#web-apps .projects');
-const spaEl = document.querySelector('#spa .projects');
+const layoutEl = body.querySelector('#layout .projects');
+const webAppsEl = body.querySelector('#web-apps .projects');
+const spaEl = body.querySelector('#spa .projects');
 
-addProjects(layoutEl, layoutData, 'grow');
-addProjects(webAppsEl, webAppsData, 'opacity');
-addProjects(spaEl, spaData, 'translate');
+addProjects(layoutEl, data, 'layouts', 'grow');
+addProjects(webAppsEl, data, 'jsapps', 'opacity');
+addProjects(spaEl, data, 'spa', 'translate');
 
 // Анимация для созданных выше блоков projects
-const projectEls = document.querySelectorAll('.projects__item');
+const projectEls = body.querySelectorAll('.projects__item');
 
 window.addEventListener('scroll', () => {
   createBlockScrollAnimation(projectEls);
 });
+
+
+// Работа с модальным окном, который содержит детали проектов
+function togglePopup() {
+  popup.classList.toggle('active');
+  body.classList.toggle('hidden-popup');
+}
+
+function popupHandle(event) {
+  // event.preventDefault()
+  const target = event.target;
+
+  if (!target.closest('.popup-body-js') || target.classList.contains('popup__close')) {
+    togglePopup();
+  }
+}
+
+popup.addEventListener('click', popupHandle);
+
+body.addEventListener('click', (event) => {
+  const target = event.target;
+
+  if (target.closest('.details-link-js')) {
+    event.preventDefault();
+    const project = target.closest('.projects__item');
+    togglePopup();
+    addProjectDetails(project.id);
+  }
+})
+
