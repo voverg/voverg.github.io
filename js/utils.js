@@ -51,21 +51,26 @@ function createProjectDetails(projectData) {
 
     <div class="popup__body">
       <div class="popup__short-description">
-        <div class="popup__text">${projectData.description}</div>
         <img src="${projectData.img}" alt="картинка ${projectData.title}" class="popup__img">
+        <div class="popup__text">${projectData.description}</div>
+
       </div>
 
       <div class="popup__long-description">${projectData.longDescription}</div>
+
+      <div class="popup__stack">
+        Стек: <span class="popup__stack-color">${projectData.stack}</span>
+      </div>
 
       <div class="popup__project-links">
         <a href="${projectData.link}"
           class="popup__btn gh-pages"
           rel="noopener noreferrer" target="_blank"
-        >Посмотреть демо-версию</a>
+        >Демо-версия</a>
         <a href="${projectData.sourceLink}"
           class="popup__btn source-code"
           rel="noopener noreferrer" target="_blank"
-        >Посмотреть код на Github</a>
+        >Код на Github</a>
       </div>
     </div>
   `;
