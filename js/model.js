@@ -3,7 +3,7 @@ const data = [
     id: 'project-1',
     type: 'layouts',
     title: 'Simple store',
-    link: 'https://voverg.github.io/simple-store/',
+    link: 'https://voverg.github.io/layout-projects/simple-store/index.html',
     sourceLink: 'https://github.com/voverg/simple-store',
     img: 'img/projects/simple-store.png',
     stack: 'Html, Css, JavaScript',
