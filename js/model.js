@@ -4,7 +4,7 @@ const data = [
     type: 'layouts',
     title: 'Simple store',
     link: 'https://voverg.github.io/layout-projects/simple-store/index.html',
-    sourceLink: 'https://github.com/voverg/simple-store',
+    sourceLink: 'https://github.com/voverg/layout-projects/tree/main/simple-store',
     img: 'img/projects/simple-store.png',
     stack: 'Html, Css, JavaScript',
     description: 'Страничка товаров интернет-магазина',
