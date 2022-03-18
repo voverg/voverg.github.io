@@ -79,13 +79,19 @@ const data = [
   {
     id: 'project-8',
     type: 'jsapps',
-    title: 'Clicker',
-    link: 'https://voverg.github.io/games/clicker/index.html',
-    sourceLink: 'https://github.com/voverg/games/tree/main/clicker',
-    img: 'img/projects/clicker.png',
+    title: 'Habits tracker',
+    link: 'https://voverg.github.io/50-simple-projects/habits/',
+    sourceLink: 'https://github.com/voverg/50-simple-projects/tree/main/habits',
+    img: 'img/projects/habits.png',
     stack: 'Html, Css, JavaScript',
-    description: 'Игра Clicker',
-    longDescription: 'Игра, в которой нужно за выбранное время попасть максимальное количество раз по шарику.',
+    description: 'Habits tracker - приложение для отслеживания привычек',
+    longDescription: `
+        Приложение "Трекер привычек":<ul>
+        <li>- Добавляйте и редактируйте задачи</li>
+        <li>- Удаляйте задачи, как по одной, так и все сразу</li>
+        <li>- Помечайте задачи выполненными</li>
+        <li>- Управляйте задачами с помощью горячих клавиш</li></ul>
+    `,
   },
   {
     id: 'project-9',
