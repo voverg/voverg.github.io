@@ -1,6 +1,6 @@
 const data = [
   {
-    id: 'project-1',
+    id: 'simple-store',
     type: 'layouts',
     title: 'Simple store',
     link: 'https://voverg.github.io/layout-projects/simple-store/index.html',
@@ -11,7 +11,18 @@ const data = [
     longDescription: 'Страничка интернет-магазина с выбором товара и реализацией работающей корзины. Можно выбирать товары, смотреть в корзине их кол-во и общую стоимость, удалять товары.',
   },
   {
-    id: 'project-2',
+    id: 'mortgage',
+    type: 'layouts',
+    title: 'Ипотечный калькулятор',
+    link: 'https://voverg.github.io/calculators/mortgage/index.html',
+    sourceLink: 'https://github.com/voverg/calculators/tree/main/mortgage',
+    img: 'img/projects/mortgage.png',
+    stack: 'Html, Css, JavaScript',
+    description: 'Калькулятор расчёта стоимости ипотеки',
+    longDescription: 'Введите стоимость недвижимости, первоначальный взнос и срок кредита. Выберите процентнтуню ставку и калькулятор рассчитает сумму кредита, процент банка, общий и ежемесячный платёж.',
+  },
+  {
+    id: 'hotel',
     type: 'layouts',
     title: 'Hotel landing',
     link: 'https://voverg.github.io/hotel-landing/',
@@ -22,7 +33,7 @@ const data = [
     longDescription: 'Свёрстан на float просто для тренировки и понимания, как работает блочная модель в Css.',
   },
   {
-    id: 'project-3',
+    id: 'frontend-quiz',
     type: 'jsapps',
     title: 'Frontend quiz',
     link: 'https://voverg.github.io/50-simple-projects/frontend-quiz/index.html',
@@ -33,7 +44,7 @@ const data = [
     longDescription: 'Переходите по вкладкам, чтобы поучаствовать в разных викторинах. Свободно переключайтесь между вкладками, состояние вкладок запоминается.',
   },
   {
-    id: 'project-4',
+    id: 'kanban',
     type: 'jsapps',
     title: 'Kanban',
     link: 'https://voverg.github.io/simple-kanban/',
@@ -44,7 +55,7 @@ const data = [
     longDescription: 'Создавайте карточки с заметками. Редактируйте, дважды кликнув по ним. Перемещайте карточки между колонками. Удаляйте карточки, переместив их за пределы столбцов.',
   },
   {
-    id: 'project-5',
+    id: 'piano',
     type: 'jsapps',
     title: 'Piano',
     link: 'https://voverg.github.io/50-simple-projects/piano/index.html',
@@ -55,7 +66,7 @@ const data = [
     longDescription: 'Извлекайте звуки, кликая мышкой по клавишам пианино. Либо на калвиатуре с английской расскладкой нажимайте клавиши awsedftgyhujkolp;',
   },
   {
-    id: 'project-6',
+    id: 'notes',
     type: 'jsapps',
     title: 'Notes',
     link: 'https://voverg.github.io/50-simple-projects/notes-app/index.html',
@@ -66,7 +77,7 @@ const data = [
     longDescription: '',
   },
   {
-    id: 'project-7',
+    id: 'budget',
     type: 'jsapps',
     title: 'Budget',
     link: 'https://voverg.github.io/50-simple-projects/budget/',
@@ -77,7 +88,7 @@ const data = [
     longDescription: '',
   },
   {
-    id: 'project-8',
+    id: 'habits',
     type: 'jsapps',
     title: 'Habits tracker',
     link: 'https://voverg.github.io/50-simple-projects/habits/',
@@ -94,7 +105,7 @@ const data = [
     `,
   },
   {
-    id: 'project-9',
+    id: 'todo',
     type: 'spa',
     title: 'Todo',
     link: 'https://voverg.github.io/todo-react/',
@@ -105,7 +116,7 @@ const data = [
     longDescription: 'Это первое приложение, которое я написал с использованием React. В нём используются компоненты на основе классов.',
   },
   {
-    id: 'project-10',
+    id: 'blog',
     type: 'spa',
     title: 'Blog',
     link: 'https://voverg.github.io/react-blog/',
@@ -116,7 +127,7 @@ const data = [
     longDescription: 'Это второе приложение на React. Здесь я уже использую функциональные компоненты и простые запросы к серверу, чтобы получить список удалённых постов.',
   },
   {
-    id: 'project-11',
+    id: 'chat',
     type: 'spa',
     title: 'Chat',
     link: 'https://voverg.github.io/chat-react/',
@@ -127,7 +138,7 @@ const data = [
     longDescription: 'Приложение написано на React с использованием функциональных компонентов и хуков. В качестве бекэнда использую Firebase.',
   },
   {
-    id: 'project-12',
+    id: 'calendar',
     type: 'spa',
     title: 'Calendar',
     link: 'https://voverg.github.io/react-calendar/',
