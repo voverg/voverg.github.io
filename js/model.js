@@ -33,6 +33,17 @@ const data = [
     longDescription: 'Свёрстан на float просто для тренировки и понимания, как работает блочная модель в Css.',
   },
   {
+    id: 'zhk',
+    type: 'layouts',
+    title: 'Жилищный комплекс',
+    link: 'https://voverg.github.io/layout-projects/zhk',
+    sourceLink: 'https://github.com/voverg/layout-projects/tree/main/zhk',
+    img: 'img/projects/zhk.png',
+    stack: 'Html, Css, JavaScript (ООП)',
+    description: 'Жилищный комплекс',
+    longDescription: 'Вёрстка жилищного комплекса с возможностью выбора этажа и просмотра совободных квартир на нём.',
+  },
+  {
     id: 'frontend-quiz',
     type: 'jsapps',
     title: 'Frontend quiz',
