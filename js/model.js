@@ -40,9 +40,21 @@ const data = [
     sourceLink: 'https://github.com/voverg/layout-projects/tree/main/zhk',
     img: 'img/projects/zhk.png',
     stack: 'Html, Css, JavaScript (ООП)',
-    description: 'Жилищный комплекс',
-    longDescription: 'Вёрстка жилищного комплекса с возможностью выбора этажа и просмотра совободных квартир на нём.',
+    description: 'Жилищный комплекс с возможностью просмотра свободных квартир на выбранном этаже',
+    longDescription: 'Вёрстка жилищного комплекса. Выберите нужный этаж и кликните по нему, чтобы посмотреть наличие свободных квартир.',
   },
+  {
+    id: '3d-landing',
+    type: 'layouts',
+    title: '3D Landing',
+    link: 'https://voverg.github.io/layout-projects/3d-landing/',
+    sourceLink: 'https://github.com/voverg/layout-projects/tree/main/3d-landing',
+    img: 'img/projects/3d-landing.png',
+    stack: 'Html, Css, JavaScript',
+    description: 'Лендинг с красивым 3D-эффектом при скролле',
+    longDescription: 'В качестве фреймов в лендинг можно размещать фото, видео, ссылки и другую информацию. Также подойдёт для создания красивой презентации с 3D-эффектом.',
+  },
+  // Applications
   {
     id: 'frontend-quiz',
     type: 'jsapps',
@@ -115,6 +127,7 @@ const data = [
         <li>- Управляйте задачами с помощью горячих клавиш</li></ul>
     `,
   },
+  // SPA
   {
     id: 'todo',
     type: 'spa',
