@@ -1,7 +1,7 @@
 // Add projects__item to the projects section
-function addProjects(block, data, type='', showClass='grow') {
+function addProjects(block, data, type='', cssClass='grow') {
   const projectsElems = data.filter(elem => elem.type === type).map((item) => {
-    const projectEl = createProjectEl(item, showClass);
+    const projectEl = createProjectEl(item, cssClass);
 
     return projectEl;
   });
@@ -10,9 +10,9 @@ function addProjects(block, data, type='', showClass='grow') {
 }
 
 // Create a project element
-function createProjectEl(item, showClass) {
+function createProjectEl(item, cssClass) {
   const projectItem = `
-    <div id="${item.id}" class="projects__item ${showClass}">
+    <div id="${item.id}" class="projects__item ${cssClass}">
       <div class="card">
         <a href="${item.link}" class="details-link-js" rel="noopener noreferrer" target="_blank">
           <img src="${item.img}" alt="${item.title} image" title="Кликни, чтобы посмотреть демо-версию">
@@ -45,7 +45,7 @@ function createBlockScrollAnimation(blocks) {
 function createProjectDetails(projectData) {
   const projectDetails = `
     <div class="popup__header">
-      <span href="" class="popup__close">&#10008;</span>
+      <span href="" class="popup__close">&#10006;</span>
       <h3 class="popup__title">Приложение ${projectData.title}</h3>
     </div>
 
