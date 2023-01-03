@@ -88,17 +88,17 @@ const data = [
     description: 'Пианино, на котором можно играть как мышкой, так и с клавиатуры',
     longDescription: 'Извлекайте звуки, кликая мышкой по клавишам пианино. Либо на калвиатуре с английской расскладкой нажимайте клавиши awsedftgyhujkolp;',
   },
-  {
-    id: 'notes',
-    type: 'jsapps',
-    title: 'Notes',
-    link: 'https://voverg.github.io/js-apps/notes-app/index.html',
-    sourceLink: 'https://github.com/voverg/js-apps/tree/main/notes-app',
-    img: 'img/projects/notes-app.png',
-    stack: 'Html, Css, JavaScript',
-    description: 'Создавайте, удаляйте и редактируйте заметки. Для стилизации текста можно использовать Markdown.',
-    longDescription: '',
-  },
+  // {
+    // id: 'notes',
+    // type: 'jsapps',
+    // title: 'Notes',
+    // link: 'https://voverg.github.io/js-apps/notes-app/index.html',
+    // sourceLink: 'https://github.com/voverg/js-apps/tree/main/notes-app',
+    // img: 'img/projects/notes-app.png',
+    // stack: 'Html, Css, JavaScript',
+    // description: 'Создавайте, удаляйте и редактируйте заметки. Для стилизации текста можно использовать Markdown.',
+    // longDescription: '',
+  // },
   {
     id: 'budget',
     type: 'jsapps',
@@ -126,6 +126,17 @@ const data = [
         <li>- Помечайте задачи выполненными</li>
         <li>- Управляйте задачами с помощью горячих клавиш</li></ul>
     `,
+  },
+  {
+    id: 'tanks',
+    type: 'jsapps',
+    title: 'Танчики',
+    link: 'https://voverg.github.io/games/tanks/',
+    sourceLink: 'https://github.com/voverg/games/tree/main/tanks',
+    img: 'img/projects/tanks.png',
+    stack: 'Html, Css, JavaScript, ООП',
+    description: 'Игра Танчики, написанная на чистом JavaScript',
+    longDescription: '',
   },
   // SPA
   {

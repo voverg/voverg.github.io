@@ -196,21 +196,55 @@ section>div.container {
 }
 
 .card {
+  position: relative;
   height: 100%;
   padding: 5px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px -2px #777;
 }
+/* .card::before { */
+  /* content: 'Подробнее'; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* padding: 10px; */
+  /* border-radius: 50px; */
+  /* background-color: #cbcbcb; */
+  /* transform: translate(-50%, -50%); */
+  /* opacity: 0; */
+  /* transition: .5s; */
+  /* z-index: 100; */
+/* } */
+/* .card::after { */
+  /* content: ''; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  /* border-radius: 5px; */
+  /* opacity: 0; */
+  /* transition: .5s; */
+/* } */
+/* .card:hover::before, */
+/* .card:hover::after { */
+  /* opacity: 1; */
+  /* cursor: pointer; */
+/* } */
+
 .card img {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
+
 .card h4 {
   padding: 10px 5px;
   font-size: 1.3rem;
 }
+
 .card p {
   font-size: .8rem;
   text-align: center;
