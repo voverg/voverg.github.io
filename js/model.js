@@ -127,16 +127,46 @@ const data = [
         <li>- Управляйте задачами с помощью горячих клавиш</li></ul>
     `,
   },
+  // Games
+  {
+    id: 'clicker',
+    type: 'games',
+    title: 'Clicker',
+    link: 'https://voverg.github.io/games/clicker/',
+    sourceLink: 'https://github.com/voverg/games/tree/main/clicker',
+    img: 'img/projects/clicker.png',
+    stack: 'Html, Css, JavaScript',
+    description: 'Игра Clicker, написанная на чистом JavaScript',
+    longDescription: 'Цель игры - накликакть как можно больше шариков за отведённое время.',
+  },
+  {
+    id: 'memory',
+    type: 'games',
+    title: 'Memory',
+    link: 'https://voverg.github.io/games/memory/',
+    sourceLink: 'https://github.com/voverg/games/tree/main/memory',
+    img: 'img/projects/memory.png',
+    stack: 'Html, Css, JavaScript, ООП, Phaser 3',
+    description: 'Игра Memory, написанная с использованием фреймворка Phaser 3',
+    longDescription: 'Цель игры - угадать все пары карточек за отведённое время.',
+  },
   {
     id: 'tanks',
-    type: 'jsapps',
+    type: 'games',
     title: 'Танчики',
     link: 'https://voverg.github.io/games/tanks/',
     sourceLink: 'https://github.com/voverg/games/tree/main/tanks',
     img: 'img/projects/tanks.png',
     stack: 'Html, Css, JavaScript, ООП',
     description: 'Игра Танчики, написанная на чистом JavaScript',
-    longDescription: '',
+    longDescription: `
+    <ul>
+      <li>- Цель игры - уничтожить всех противников (есть 4 вида противников)</li>
+      <li>- Есть возможность прокачивать свой танк, собирая бонусы</li>
+      <li>- В игре есть несколько уровней разной сложности</li>
+      <li>- Реализован конструктор создания собственного уровня</li>
+    </ul>
+    `,
   },
   // SPA
   {

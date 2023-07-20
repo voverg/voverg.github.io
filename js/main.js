@@ -86,10 +86,12 @@ function changeActiveMenuItem(sectionId) {
 // Добавление проектов в блоки projects
 const layoutEl = body.querySelector('#layout .projects');
 const webAppsEl = body.querySelector('#web-apps .projects');
+const gameEl = body.querySelector('#games .projects');
 const spaEl = body.querySelector('#spa .projects');
 
 addProjects(layoutEl, data, 'layouts', 'grow');
 addProjects(webAppsEl, data, 'jsapps', 'opacity');
+addProjects(gameEl, data, 'games', 'grow');
 addProjects(spaEl, data, 'spa', 'translate');
 
 // Анимация для созданных выше блоков projects
