@@ -83,6 +83,10 @@ h3.popup__title {
 .popup__long-description {
   margin-top: 20px;
 }
+.popup__long-description li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
 
 .popup__project-links {
   display: flex;

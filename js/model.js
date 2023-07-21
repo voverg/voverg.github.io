@@ -88,17 +88,17 @@ const data = [
     description: 'Пианино, на котором можно играть как мышкой, так и с клавиатуры',
     longDescription: 'Извлекайте звуки, кликая мышкой по клавишам пианино. Либо на калвиатуре с английской расскладкой нажимайте клавиши awsedftgyhujkolp;',
   },
-  // {
-    // id: 'notes',
-    // type: 'jsapps',
-    // title: 'Notes',
-    // link: 'https://voverg.github.io/js-apps/notes-app/index.html',
-    // sourceLink: 'https://github.com/voverg/js-apps/tree/main/notes-app',
-    // img: 'img/projects/notes-app.png',
-    // stack: 'Html, Css, JavaScript',
-    // description: 'Создавайте, удаляйте и редактируйте заметки. Для стилизации текста можно использовать Markdown.',
-    // longDescription: '',
-  // },
+  {
+    id: 'notes',
+    type: 'jsapps',
+    title: 'Notes',
+    link: 'https://voverg.github.io/js-apps/notes-app/index.html',
+    sourceLink: 'https://github.com/voverg/js-apps/tree/main/notes-app',
+    img: 'img/projects/notes-app.png',
+    stack: 'Html, Css, JavaScript',
+    description: 'Создавайте, удаляйте и редактируйте заметки. Для стилизации текста можно использовать Markdown.',
+    longDescription: '',
+  },
   {
     id: 'budget',
     type: 'jsapps',
@@ -121,10 +121,10 @@ const data = [
     description: 'Habits tracker - приложение для отслеживания привычек',
     longDescription: `
         Приложение "Трекер привычек":<ul>
-        <li>- Добавляйте и редактируйте задачи</li>
-        <li>- Удаляйте задачи, как по одной, так и все сразу</li>
-        <li>- Помечайте задачи выполненными</li>
-        <li>- Управляйте задачами с помощью горячих клавиш</li></ul>
+        <li>Добавляйте и редактируйте задачи</li>
+        <li>Удаляйте задачи, как по одной, так и все сразу</li>
+        <li>Помечайте задачи выполненными</li>
+        <li>Управляйте задачами с помощью горячих клавиш</li></ul>
     `,
   },
   // Games
@@ -151,6 +151,23 @@ const data = [
     longDescription: 'Цель игры - угадать все пары карточек за отведённое время.',
   },
   {
+    id: 'snake',
+    type: 'games',
+    title: 'Змейка',
+    link: 'https://voverg.github.io/games/snake/',
+    sourceLink: 'https://github.com/voverg/games/tree/main/snake',
+    img: 'img/projects/snake.png',
+    stack: 'Html, Css, JavaScript, ООП',
+    description: 'Игра Змейка, написанная на чистом JavaScript',
+    longDescription: `
+    <ul>
+      <li>Цель игры - передвигаясь по полую собрать все фрукты, не столкнуться с границами поля и не напороться на бомбочки</li>
+      <li>Реализовно множество уровней</li>
+      <li>На каждом уровне змейка ускоряется и кол-во бомбочек увеличивается</li>
+    </ul>
+    `,
+  },
+  {
     id: 'tanks',
     type: 'games',
     title: 'Танчики',
@@ -161,10 +178,10 @@ const data = [
     description: 'Игра Танчики, написанная на чистом JavaScript',
     longDescription: `
     <ul>
-      <li>- Цель игры - уничтожить всех противников (есть 4 вида противников)</li>
-      <li>- Есть возможность прокачивать свой танк, собирая бонусы</li>
-      <li>- В игре есть несколько уровней разной сложности</li>
-      <li>- Реализован конструктор создания собственного уровня</li>
+      <li>Цель игры - уничтожить всех противников (есть 4 вида противников)</li>
+      <li>Есть возможность прокачивать свой танк, собирая бонусы</li>
+      <li>В игре есть несколько уровней разной сложности</li>
+      <li>Реализован конструктор создания собственного уровня</li>
     </ul>
     `,
   },
