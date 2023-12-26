@@ -66,17 +66,17 @@ const data = [
     description: 'Викторина, в которой вы можете проверть свои знания по Html, Css и JavaScript',
     longDescription: 'Переходите по вкладкам, чтобы поучаствовать в разных викторинах. Свободно переключайтесь между вкладками, состояние вкладок запоминается.',
   },
-  {
-    id: 'kanban',
-    type: 'jsapps',
-    title: 'Kanban',
-    link: 'https://voverg.github.io/simple-kanban/',
-    sourceLink: 'https://github.com/voverg/simple-kanban',
-    img: 'img/projects/simple-kanban.png',
-    stack: 'Html, Css, JavaScript',
-    description: 'Небольшое приложение на подобие Канбан',
-    longDescription: 'Создавайте карточки с заметками. Редактируйте, дважды кликнув по ним. Перемещайте карточки между колонками. Удаляйте карточки, переместив их за пределы столбцов.',
-  },
+  // {
+  //   id: 'kanban',
+  //   type: 'jsapps',
+  //   title: 'Kanban',
+  //   link: 'https://voverg.github.io/simple-kanban/',
+  //   sourceLink: 'https://github.com/voverg/simple-kanban',
+  //   img: 'img/projects/simple-kanban.png',
+  //   stack: 'Html, Css, JavaScript',
+  //   description: 'Небольшое приложение на подобие Канбан',
+  //   longDescription: 'Создавайте карточки с заметками. Редактируйте, дважды кликнув по ним. Перемещайте карточки между колонками. Удаляйте карточки, переместив их за пределы столбцов.',
+  // },
   {
     id: 'piano',
     type: 'jsapps',
@@ -125,6 +125,27 @@ const data = [
         <li>Удаляйте задачи, как по одной, так и все сразу</li>
         <li>Помечайте задачи выполненными</li>
         <li>Управляйте задачами с помощью горячих клавиш</li></ul>
+    `,
+  },
+  {
+    id: 'sheets',
+    type: 'jsapps',
+    title: 'Таблицы',
+    link: 'https://voverg.github.io/js-apps/sheets/',
+    sourceLink: 'https://github.com/voverg/js-apps/tree/main/sheets',
+    img: 'img/projects/sheets.png',
+    stack: 'Html, Css, JavaScript, ООП',
+    description: 'Таблицы - упрощённый аналог Google таблиц',
+    longDescription: `
+        В приложении можно:
+        <ul>
+          <li>Создавать таблицы, редактировать и удалять их</li>
+          <li>Изменять размер строк и столбцов</li>
+          <li>Стилизовать ячейки как по одной, так и группы ячеек</li>
+          <li>Перемещаться между ячейками с помощью стрелок</li>
+          <li>Выполнять простые математические операции</li>
+          <li>Есть раздел "Помощь", в котором подробно описаны все возможности</li>
+        </ul>
     `,
   },
   // Games
