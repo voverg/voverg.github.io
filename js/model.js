@@ -1,16 +1,5 @@
 const data = [
   {
-    id: 'simple-store',
-    type: 'layouts',
-    title: 'Simple store',
-    link: 'https://voverg.github.io/layout-projects/simple-store/index.html',
-    sourceLink: 'https://github.com/voverg/layout-projects/tree/main/simple-store',
-    img: 'img/projects/simple-store.png',
-    stack: 'Html, Css, JavaScript',
-    description: 'Вёрстка интернет-магазина',
-    longDescription: 'Реализация frontend части интернет-магазина. В приложении можно сортировать товары по категориям, цене, брендам. Осуществлять поиск по тексту описания товаров. Добавлять и удалять товар из корзины. Просматривать информацию о выбранных товарах.',
-  },
-  {
     id: 'mortgage',
     type: 'layouts',
     title: 'Ипотечный калькулятор',
@@ -96,10 +85,19 @@ const data = [
     sourceLink: 'https://github.com/voverg/js-apps/tree/main/budget',
     img: 'img/projects/budget.png',
     stack: 'Html, Css, JavaScript',
-    description: 'Небольшое приложение по учёту доходов и расходов.',
-    longDescription: '',
+    description: 'Budget - приложение по учёту финансов',
+    longDescription: `
+        В приложении можно:
+		<ul>
+			<li>Добавлять доходы и расходы</li>
+			<li>Редактировать записи</li>
+			<li>Просмотр отдельно списков доходов и расходов</li>
+			<li>Просмотрь общего списка доходов и расходов</li>
+			<li>Наблюдать на диаграмме соотношение доходов и расходов</li>
+		</ul>
+    `,
   },
-  {
+/*   {
     id: 'notes',
     type: 'jsapps',
     title: 'Notes',
@@ -107,9 +105,17 @@ const data = [
     sourceLink: 'https://github.com/voverg/js-apps/tree/main/notes-app',
     img: 'img/projects/notes-app.png',
     stack: 'Html, Css, JavaScript',
-    description: 'Создавайте, удаляйте и редактируйте заметки. Для стилизации текста можно использовать Markdown.',
-    longDescription: '',
-  },
+    description: 'Notes - приложение для ведения заметок',
+    longDescription: `
+        В приложении можно:
+		<ul>
+			<li>Добавлять заметки</li>
+			<li>Редактировать заметки</li>
+			<li>Удалять заметки</li>
+			<li>Стилизовать заметки, используя Markdown</li>
+		</ul>
+    `,
+  }, */
   {
     id: 'habits',
     type: 'jsapps',
@@ -125,6 +131,25 @@ const data = [
         <li>Удаляйте задачи, как по одной, так и все сразу</li>
         <li>Помечайте задачи выполненными</li>
         <li>Управляйте задачами с помощью горячих клавиш</li></ul>
+    `,
+  },
+  {
+    id: 'simple-store',
+    type: 'jsapps',
+    title: 'Simple store',
+    link: 'https://voverg.github.io/layout-projects/simple-store/index.html',
+    sourceLink: 'https://github.com/voverg/layout-projects/tree/main/simple-store',
+    img: 'img/projects/simple-store.png',
+    stack: 'Html, Css, JavaScript',
+    description: 'Реализация frontend части интернет-магазина',
+    longDescription: `
+        В приложении можно:
+        <ul>
+          <li>Сортировать товары по категориям, цене, брендам</li>
+          <li>Осуществлять поиск по тексту описания товаров</li>
+          <li>Добавлять и удалять товар из корзины</li>
+          <li>Просматривать информацию о выбранных товарах в корзине</li>
+        </ul>
     `,
   },
   {
