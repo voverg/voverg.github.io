@@ -43,6 +43,17 @@ const data = [
     description: 'Лендинг с красивым 3D-эффектом при скролле',
     longDescription: 'В качестве фреймов в лендинг можно размещать фото, видео, ссылки и другую информацию. Также подойдёт для создания красивой презентации с 3D-эффектом.',
   },
+  {
+    id: 'payer',
+    type: 'layouts',
+    title: 'Payer',
+    link: 'https://voverg.github.io/layout-projects/payer/',
+    sourceLink: 'https://github.com/voverg/layout-projects/tree/main/payer',
+    img: 'img/projects/payer.png',
+    stack: 'Html, Css, JavaScript',
+    description: 'Сайт платёжной системы',
+    longDescription: 'Вёрстка сайта с бургер-меню, модальным окном и большими отличиями между desktop и mobile версиями',
+  },
   // Applications
   {
     id: 'frontend-quiz',
